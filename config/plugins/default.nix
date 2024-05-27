@@ -5,5 +5,6 @@
 
     ./utils/which-key.nix
     ./utils/undotree.nix
+    ./utils/copilot.nix
   ];
 }
