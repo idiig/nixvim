@@ -4,5 +4,6 @@
     ./ui/btw.nix
 
     ./utils/which-key.nix
+    ./utils/undotree.nix
   ];
 }
