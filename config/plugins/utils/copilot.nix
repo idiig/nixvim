@@ -10,6 +10,7 @@
     hash = "sha256-Q+g81BQVQTY5J2c2ZWB7bjJLuNSdI0PAan+75YJ7mI0=";
   };
 in {
+  # copilotchat
   extraPlugins = with pkgs.vimUtils; [
     (buildVimPlugin {
       pname = "copilotchat";
@@ -22,8 +23,24 @@ in {
       };
     })
   ];
+
+  # auto completion with copilot
+  plugins.copilot-cmp = {
+    enable = true;
+  };
+  plugins.copilot-lua = {
+    enable = true;
+    suggestion = {enabled = false;};
+    panel = {enabled = false;};
+  };
+
+  # setup
   extraConfigLua = ''
-    require("CopilotChat").setup { }
+   require("CopilotChat").setup { }
+   require("copilot").setup({
+      suggestion = { enabled = false },
+      panel = { enabled = false },
+   })
   '';
 
   keymaps = [
