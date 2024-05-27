@@ -1,3 +1,3 @@
 {
-  colorschemes.nightfly.enable = true;
+  colorschemes.gruvbox.enable = true;
 }
