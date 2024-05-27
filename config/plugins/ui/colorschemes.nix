@@ -1,0 +1,3 @@
+{
+  colorschemes.nightfly.enable = true;
+}
