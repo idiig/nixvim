@@ -85,3 +85,58 @@ in {
     }
   ];
 }
+
+# { pkgs, ... }:
+
+# {
+#   plugins = {
+#     copilot-lua = {
+#       enable = true;
+#       # suggestion = { enabled = false };
+#       # panel = { enabled = false };
+#     };
+#     # copilotChat-nvim = {
+#     #   enable = true;
+#     # };
+#   };
+
+#   extraPlugins = with pkgs.vimExtraPlugins; [
+#     copilotChat-nvim
+#   ];
+
+#   extraConfigLua = ''
+#     require("copilot").setup({
+#       suggestion = { enabled = false },
+#       panel = { enabled = false },
+#     })
+#     require("CopilotChat").setup { }
+#   '';
+
+#   keymaps = [
+#     {
+#       mode = "x";
+#       key = "<leader>a";
+#       action = "+copilot";
+#     }
+#     {
+#       mode = "x";
+#       key = "<leader>ae";
+#       action = "<cmd>CopilotChatExplain<cr>";
+#     }
+#     {
+#       mode = "x";
+#       key = "<leader>af";
+#       action = "<cmd>CopilotChatFix<cr>";
+#     }
+#     {
+#       mode = "x";
+#       key = "<leader>ad";
+#       action = "<cmd>CopilotChatDocs<cr>";
+#     }
+#     {
+#       mode = "x";
+#       key = "<leader>ac";
+#       action = "<cmd>CopilotChatCommit<cr>";
+#     }
+#   ];
+# }
