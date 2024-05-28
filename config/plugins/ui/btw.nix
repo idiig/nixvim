@@ -16,7 +16,7 @@
 
   extraConfigLua = ''
     require('btw').setup({
-      text = "I use Emacs, BTW",
+      text = "Helix is cool, BTW",
     })
   '';
 }
