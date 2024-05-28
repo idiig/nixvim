@@ -10,6 +10,6 @@
     ./utils/undotree.nix
     ./utils/copilot.nix
     ./utils/completion/cmp.nix
-
+    ./utils/nvim-autopairs.nix
   ];
 }
