@@ -39,21 +39,22 @@
     };
   };
 
-  extraConfigLua = ''
-    vim.keymap.set({ "n", "v" }, "<leader>mp", function()
-      require("conform").format({
-        lsp_fallback = true,
-        async = false,
-        timeout_ms = 1000,
-      })
-    end, { desc = "Format file or range (in visual mode)" })
-  '';
-
-  # keymaps = [
-  #   {
-  #     mode = "n";
-  #     key = "<leader>mp";
-  #     action = "";
-  #   }
-  # ];
+  keymaps = [
+    {
+      mode = [ "n" "v" ];
+      key = "<leader>mp";
+      action.__raw = ''
+        function()
+          require("conform").format({
+             lsp_fallback = true,
+             async = false,
+             timeout_ms = 1000,
+          })
+        end
+      '';
+      options = {
+        desc = "Format file or range (in visual mode)";
+      };
+    }
+  ];
 }
