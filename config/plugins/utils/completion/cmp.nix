@@ -3,6 +3,7 @@
   imports = [
     ./cmp-emoji.nix
     ./cmp-copilot.nix
+    ./cmp-snippets.nix
   ];
 
   plugins = {
@@ -63,6 +64,7 @@
         };
       };
     };
+
     cmp-nvim-lsp = {enable = true;}; # lsp
     cmp-buffer = {enable = true;};
     cmp-path = {enable = true;}; # file system paths
