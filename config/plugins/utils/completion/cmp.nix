@@ -1,4 +1,11 @@
 {
+  # dependencies
+  imports = [
+    ./cmp-lsp.nix
+    ./cmp-emoji.nix
+    ./cmp-copilot.nix
+  ];
+
   plugins = {
 
     cmp = {
