@@ -10,10 +10,9 @@
     {
       mode = "n";
       key = "<leader>ut";
-      action = "<cmd>UndotreeToggle<CR>";
+      action = "<cmd>UndotreeShow<CR><cmd>UndotreeFocus<CR>";
       options = {
-        # silent = true;
-        silent = false;
+        silent = true;
         desc = "Undotree";
       };
     }
