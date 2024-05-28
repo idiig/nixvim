@@ -1,7 +1,5 @@
 {
-  # Import all your configuration modules here
-  imports = [ 
-    # ./bufferline.nix
+  imports = [
     ./core/default.nix
     ./plugins/default.nix
   ];
