@@ -3,6 +3,7 @@
     ./ui/colorschemes.nix
     ./ui/btw.nix
     ./ui/bufferline.nix
+    ./ui/lspkind.nix
 
     ./utils/plenary.nix
     ./utils/which-key.nix
