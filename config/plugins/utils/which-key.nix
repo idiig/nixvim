@@ -3,7 +3,7 @@
     enable = true;
     triggers = "auto";
     registrations = {
-
+      # TODO: Change <leader>
       # Space mode
       "<leader>f" = "Open file picker";
       "<leader>F" = "Open file picker at current working directory";
@@ -63,7 +63,10 @@
       "m" = "Match";
 
       # Window mode
-      "C-w" = "Window";
+      # "<leader>w" = "Window";
+
+      # More utils
+      "," = "Utils";
     };
   };
 

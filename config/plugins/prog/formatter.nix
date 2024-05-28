@@ -42,7 +42,7 @@
   keymaps = [
     {
       mode = [ "n" "v" ];
-      key = "<leader>mp";
+      key = ",=";
       action.__raw = ''
         function()
           require("conform").format({

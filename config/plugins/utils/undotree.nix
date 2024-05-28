@@ -9,7 +9,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>u";
+      key = ",u";
       action = "<cmd>UndotreeShow<CR><cmd>UndotreeFocus<CR>";
       options = {
         silent = true;
