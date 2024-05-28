@@ -4,6 +4,7 @@
     ./cmp-emoji.nix
     ./cmp-copilot.nix
     ./cmp-snippets.nix
+    ./cmp-pairs.nix
   ];
 
   plugins = {
