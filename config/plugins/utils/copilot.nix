@@ -9,9 +9,29 @@
     rev = "2771f1fa7af502ea4226a88a792f4e4319199906";
     hash = "sha256-Q+g81BQVQTY5J2c2ZWB7bjJLuNSdI0PAan+75YJ7mI0=";
   };
+  copilotRepo = {
+    owner = "zbirenbaum";
+    repo = "copilot.lua";
+    rev = "f7612f5af4a7d7615babf43ab1e67a2d790c13a6";
+    hash = "sha256-JX3sdsnOnjkY7r9fCtC2oauo0PXF3SQ+SHUo8ifBvAc=";
+  };
 in {
-  # copilotchat
+
   extraPlugins = with pkgs.vimUtils; [
+
+    # coplilot
+    (buildVimPlugin {
+      pname = "copilot";
+      version = "2024-05-28";
+      src = pkgs.fetchFromGitHub copilotChatRepo;
+      meta = {
+        description = "This plugin is the pure lua replacement for github/copilot.vim.";
+        homepage = "https://github.com/zbirenbaum/copilot.lua";
+        license = lib.licenses.mit;
+      };
+    })
+
+    # copilotchat
     (buildVimPlugin {
       pname = "copilotchat";
       version = "2.4.0";
@@ -23,6 +43,14 @@ in {
       };
     })
   ];
+
+  extraConfigLua = ''
+    require("copilot").setup({
+      suggestion = { enabled = false },
+      panel = { enabled = false },
+    })
+    require("CopilotChat").setup { }
+  '';
 
   keymaps = [
     {
