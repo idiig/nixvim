@@ -1,10 +1,12 @@
 {
   plugins.telescope = {
+
     enable = true;
     keymaps = {
       # Example
       # ",fg" = "live_grep";
     };
+
     # For extensions, look https://github.com/nix-community/nixvim/tree/main/plugins/telescope/extensions
     extensions = {
 
@@ -16,35 +18,6 @@
           override_generic_sorter = true;  # override the generic sorter
           override_file_sorter = true;     # override the file sorter
           case_mode = "smart_case";        # or "ignore_case" or "respect_case"
-        };
-      };
-
-      # Media files
-      media-files = {
-        enable = true;
-        # Example
-        settings = {
-          filetypes = [
-            "png"
-            "webp"
-            "jpg"
-            "jpeg"
-            "pdf"
-            "svg"
-            "esp"
-          ];
-          find_cmd = "rg";
-        };
-      };
-
-      # File browser
-      file-browser = {
-        enable = true;
-        settings = {
-          file_browser = {
-            # theme = "ivy";
-            hijack_netrw = true;
-          };
         };
       };
 
@@ -74,6 +47,35 @@
               "Y" = "require('telescope-undo.actions').yank_deletions";
               "u" = "require('telescope-undo.actions').restore";
             };
+          };
+        };
+      };
+
+      # Media files
+      media-files = {
+        enable = false;  # true to turn on
+        # Example
+        settings = {
+          filetypes = [
+            "png"
+            "webp"
+            "jpg"
+            "jpeg"
+            "pdf"
+            "svg"
+            "esp"
+          ];
+          find_cmd = "rg";
+        };
+      };
+
+      # File browser
+      file-browser = {
+        enable = false;  # off to turn on
+        settings = {
+          file_browser = {
+            # theme = "ivy";
+            hijack_netrw = true;
           };
         };
       };
