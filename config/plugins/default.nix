@@ -10,9 +10,10 @@
     ./ui/lspkind.nix
 
     ./utils/which-key.nix
+    ./utils/completion/cmp.nix
+    ./utils/im-select.nix
     ./utils/undotree.nix
     ./utils/copilotChat.nix
-    ./utils/completion/cmp.nix
 
     ./prog/formatter.nix
   ];
