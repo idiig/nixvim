@@ -60,27 +60,30 @@ in {
   keymaps = [
     {
       mode = "x";
-      key = "<leader>a";
+      key = ",a";
       action = "+copilot";
+      options = {
+        desc = "Ask Copilot";
+      };
     }
     {
       mode = "x";
-      key = "<leader>ae";
+      key = ",ae";
       action = "<cmd>CopilotChatExplain<cr>";
     }
     {
       mode = "x";
-      key = "<leader>af";
+      key = ",af";
       action = "<cmd>CopilotChatFix<cr>";
     }
     {
       mode = "x";
-      key = "<leader>ad";
+      key = ",ad";
       action = "<cmd>CopilotChatDocs<cr>";
     }
     {
       mode = "x";
-      key = "<leader>ac";
+      key = ",ac";
       action = "<cmd>CopilotChatCommit<cr>";
     }
   ];
@@ -115,27 +118,27 @@ in {
 #   keymaps = [
 #     {
 #       mode = "x";
-#       key = "<leader>a";
+#       key = ",a";
 #       action = "+copilot";
 #     }
 #     {
 #       mode = "x";
-#       key = "<leader>ae";
+#       key = ",ae";
 #       action = "<cmd>CopilotChatExplain<cr>";
 #     }
 #     {
 #       mode = "x";
-#       key = "<leader>af";
+#       key = ",af";
 #       action = "<cmd>CopilotChatFix<cr>";
 #     }
 #     {
 #       mode = "x";
-#       key = "<leader>ad";
+#       key = ",ad";
 #       action = "<cmd>CopilotChatDocs<cr>";
 #     }
 #     {
 #       mode = "x";
-#       key = "<leader>ac";
+#       key = ",ac";
 #       action = "<cmd>CopilotChatCommit<cr>";
 #     }
 #   ];
