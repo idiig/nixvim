@@ -1,6 +1,9 @@
+# TODO: Is there a way to integrate system tools into the standalone nixvim?
+
 {
   imports = [
 
+    # TODO write dependency in a way like lazyvim
     ./dependencies/plenary.nix
     ./dependencies/copilot.nix
 
@@ -31,6 +34,7 @@
     ./completion/snippets/luasnip.nix
 
     # Filesystem
+    ./filesystem/telescope.nix
     # ./filesystem/telescope.lua
     # ./filesystem/dired.nix
 

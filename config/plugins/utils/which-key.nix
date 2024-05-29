@@ -10,7 +10,7 @@
     registrations = {
       # TODO: Change <leader>
       # Space mode
-      "<leader>f" = "Open file picker";
+      "<leader>f" = "+File";
       "<leader>F" = "Open file picker at current working directory";
       "<leader>b" = "Open buffer picker";
       "<leader>j" = "Open jumplist picker (TODO: Harpoon)";
