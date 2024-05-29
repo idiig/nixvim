@@ -11,12 +11,6 @@
     }
     {
       mode = "n";
-      key = "<leader>ww";
-      action = "<Cmd>w<CR>";
-      options = { desc = "Save a file with ww"; };
-    }
-    {
-      mode = "n";
       key = "<leader>nh";
       action = ":nohl<CR>";
       options = { desc = "Clear search highlights"; };
@@ -90,25 +84,25 @@
     }
     {
       mode = "n";
-      key = "<leader>sv";
+      key = "<leader>wv";
       action = "<C-w>v";
       options = { desc = "Split window vertically"; };
     }
     {
       mode = "n";
-      key = "<leader>sh";
+      key = "<leader>ws";
       action = "<C-w>s";
       options = { desc = "Split window horizontally"; };
     }
     {
       mode = "n";
-      key = "<leader>se";
+      key = "<leader>w=";
       action = "<C-w>=";
       options = { desc = "Make splits equal size"; };
     }
     {
       mode = "n";
-      key = "<leader>sx";
+      key = "<leader>wq";
       action = "<cmd>close<CR>";
       options = { desc = "Close current split"; };
     }
