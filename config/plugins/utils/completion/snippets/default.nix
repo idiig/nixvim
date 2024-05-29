@@ -1,6 +1,6 @@
 {
   imports = [
-    ./snippets/luasnip.nix
-    ./snippets/friendly-snippets.nix
+    ./luasnip.nix
+    ./friendly-snippets.nix
   ];
 }
