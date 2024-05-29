@@ -18,8 +18,8 @@
     ./utils/which-key.nix  # show keybindings
     ./utils/undotree.nix  # undo history manage
     ./utils/copilotChat.nix  # AI assistant
+    ./utils/nvim-surround.nix  # Edit surround of selection
     # TODO
-    # ./utils/nvim-surround.lua
     # ./utils/auto-session.lua
 
     # Auto completion
@@ -31,8 +31,8 @@
     ./completion/snippets/luasnip.nix
 
     # Filesystem
-    # ./filesystem/dired.nix
     # ./filesystem/telescope.lua
+    # ./filesystem/dired.nix
 
     # CJK languages
     ./cjk/im-select.nix  # auto select input method when switch mode
