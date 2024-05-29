@@ -33,9 +33,18 @@
     ./completion/snippets/friendly-snippets.nix
     ./completion/snippets/luasnip.nix
 
+    # Pickers
+    ./pickers/telescope.nix
+    ./pickers/keymaps/file-picker.nix
+    ./pickers/keymaps/meta-picker.nix
+    ./pickers/keymaps/string-picker.nix  # aka search file/buffer/workspace
+    ./pickers/keymaps/command-picker.nix # emacs M-x
+    ./pickers/keymaps/jumplist-picker.nix
+    # TODO
+    # ./pickers/keymaps/git-picker.nix
+    # ./pickers/keymaps/lsp-picker.nix
+
     # Filesystem
-    ./filesystem/telescope.nix
-    # ./filesystem/telescope.lua
     # ./filesystem/dired.nix
 
     # CJK languages
