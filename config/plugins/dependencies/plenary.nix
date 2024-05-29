@@ -1,3 +1,5 @@
+# This plugin (plenary.log) is required by copilotChat
+
 {
   pkgs,
   lib,

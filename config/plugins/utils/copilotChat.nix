@@ -1,4 +1,5 @@
-# :Copilot authn to access github copilot account
+# Require copilot.lua or copilot.vim
+# Require plenary.log in plenary.nvim
 
 {
   pkgs,

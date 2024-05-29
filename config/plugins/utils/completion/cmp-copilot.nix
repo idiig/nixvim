@@ -1,3 +1,4 @@
+# require copilot.lua or copilot.vim
 {
   # auto completion with copilot
   plugins.copilot-cmp = {
@@ -9,11 +10,4 @@
     suggestion = {enabled = false;};
     panel = {enabled = false;};
   };
-
-  extraConfigLua = ''
-    require("copilot").setup({
-      suggestion = { enabled = false },
-      panel = { enabled = false },
-    })
-  '';
 }

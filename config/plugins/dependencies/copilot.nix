@@ -1,4 +1,5 @@
-# :Copilot authn to access github copilot account
+# This plugin is required by copilotChat and cmp
+# To use github copilot type `:Copilot authn` to access github copilot account
 
 {
   pkgs,
