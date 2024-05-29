@@ -2,6 +2,11 @@
   plugins.which-key = {
     enable = true;
     triggers = "auto";
+    # Some usefull default settings; you can change follow
+    # More on https://nix-community.github.io/nixvim/plugins/which-key/index.html?highlight=which-key#pluginswhich-keyshowkeys
+    # hidden = ["<silent>" "<cmd>" "<Cmd>" "<CR>" "^:" "^ " "^call " "^lua "];
+    # ignoreMissing = false;
+    # operators = {gc = "Comments";};
     registrations = {
       # TODO: Change <leader>
       # Space mode
@@ -32,7 +37,7 @@
       "<leader>?" = "Open command palette";
 
       # Goto mode
-      "g" = "Goto";
+      # "g" = "Goto";
       "gg" = "Goto line number <n> else file start";
       "ge" = "Goto last line";
       "gf" = "Goto files/URLs in selections";
@@ -57,16 +62,16 @@
       "gw" = "Jump to a two-character label";
 
       # View mode
-      "z" = "View";
+      # "z" = "View";
 
       # Match mode
-      "m" = "Match";
+      # "m" = "Match";
 
       # Window mode
       # "<leader>w" = "Window";
 
       # More utils
-      "," = "Utils";
+      # "," = "Utils";
     };
   };
 
