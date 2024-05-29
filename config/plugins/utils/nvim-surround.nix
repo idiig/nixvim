@@ -30,7 +30,7 @@ in {
     (buildVimPlugin {
       pname = "nvim-surround";
       version = "v2.1.0";
-      src = pkgs.fetchFromGitHub copilotChatRepo;
+      src = pkgs.fetchFromGitHub nvimSurroundRepo;
       meta = {
         description = "Surround selections, stylishly ??";
         homepage = "https://github.com/kylechui/nvim-surround";
