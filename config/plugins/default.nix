@@ -10,8 +10,8 @@
     ./ui/lspkind.nix
 
     ./utils/which-key.nix
-    ./utils/completion/cmp.nix
-    ./utils/im-select.nix
+    ./utils/completion/init.nix
+    ./utils/cjk/im-select.nix
     ./utils/undotree.nix
     ./utils/copilotChat.nix
 
