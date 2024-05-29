@@ -36,6 +36,7 @@
     # Pickers
     ./pickers/telescope.nix
     ./pickers/keymaps/file-picker.nix
+    ./pickers/keymaps/buffer-picker.nix
     ./pickers/keymaps/meta-picker.nix
     ./pickers/keymaps/string-picker.nix  # aka search file/buffer/workspace
     ./pickers/keymaps/command-picker.nix # emacs M-x

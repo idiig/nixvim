@@ -71,7 +71,7 @@
 
       # File browser
       file-browser = {
-        enable = false;  # off to turn on
+        enable = true;
         settings = {
           file_browser = {
             # theme = "ivy";
