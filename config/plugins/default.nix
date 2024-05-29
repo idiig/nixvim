@@ -4,17 +4,44 @@
     ./dependencies/plenary.nix
     ./dependencies/copilot.nix
 
-    ./ui/colorschemes.nix
-    ./ui/btw.nix
-    ./ui/bufferline.nix
-    ./ui/lspkind.nix
+    # UI
+    ./ui/colorschemes.nix  # colorschemes
+    ./ui/btw.nix  # clean banner
+    ./ui/bufferline.nix  # show buffer on the top
+    ./ui/lspkind.nix  # popup icons
+    # TODO
+    # ./ui/lualine.lua
+    # ./ui/gitsigns.lua
+    # ./ui/colorizer.lua
 
-    ./utils/which-key.nix
-    ./utils/completion/init.nix
-    ./utils/cjk/im-select.nix
-    ./utils/undotree.nix
-    ./utils/copilotChat.nix
+    # utils
+    ./utils/which-key.nix  # show keybindings
+    ./utils/undotree.nix  # undo history manage
+    ./utils/copilotChat.nix  # AI assistant
+    # TODO
+    # ./utils/nvim-surround.lua
+    # ./utils/auto-session.lua
 
-    ./prog/formatter.nix
+    # Auto completion
+    ./completion/cmp.nix
+    ./completion/nvim-autopairs.nix
+    ./completion/cmp-emoji.nix
+    ./completion/copilot-cmp.nix
+    ./completion/snippets/friendly-snippets.nix
+    ./completion/snippets/luasnip.nix
+
+    # Filesystem
+    # ./filesystem/dired.nix
+    # ./filesystem/telescope.lua
+
+    # CJK languages
+    ./cjk/im-select.nix  # auto select input method when switch mode
+    # TODO
+    # ./cjk/kensaku.lua
+
+    # Programming
+    ./prog/conform.nix  # formatting
+
+    # Writting
   ];
 }
