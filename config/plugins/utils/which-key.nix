@@ -11,15 +11,15 @@
       # TODO: Change <leader>
       # Space mode
       "<leader>f" = "+File";
-      "<leader>F" = "Open file picker at current working directory";
-      "<leader>b" = "Open buffer picker";
-      "<leader>j" = "Open jumplist picker (TODO: Harpoon)";
+      # "<leader>F" = "Open file picker at current working directory";
+      # "<leader>b" = "Open buffer picker";
+      # "<leader>j" = "Open jumplist picker (TODO: Harpoon)";
       "<leader>s" = "Open symbol picker (LSP)";
       "<leader>S" = "Open workspace symbol picker (LSP)";
       "<leader>d" = "Open diagnostic picker (LSP)";
       "<leader>D" = "Open workspace diagnostic picker (LSP)";
       "<leader>a" = "Perform code action (LSP)";
-      "<leader>'" = "Open last picker";
+      # "<leader>'" = "Open last picker";
       "<leader>g" = "Debug";
       "<leader>w" = "Window";
       "<leader>y" = "Yank selections to clipboard";
@@ -27,14 +27,14 @@
       "<leader>p" = "Paste clipboard after selections";
       "<leader>P" = "Paste clipboard before selections";
       "<leader>R" = "Replace selections by clipboard content";
-      "<leader>/" = "Global search in workspace folder (TODO: telescope)";
+      # "<leader>/" = "Global search in workspace folder (TODO: telescope)";
       "<leader>k" = "Show docs for item under cursor";
       "<leader>r" = "Rename symbol";
       "<leader>h" = "Select symbol references";
       "<leader>c" = "Comment/uncomment selections";
       "<leader>C" = "Block comment/uncomment selections";
       "<leader>A-c" = "Line comment/uncomment selections";
-      "<leader>?" = "Open command palette";
+      # "<leader>?" = "Open command palette";
 
       # Goto mode
       # "g" = "Goto";
