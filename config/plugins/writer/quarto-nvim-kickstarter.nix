@@ -18,7 +18,7 @@ in {
     (buildVimPlugin {
       pname = "quarto-nvim-kickstarter";
       version = "3.9.0";
-      src = pkgs.fetchFromGitHub quartoNvimKickStarterRepo;
+      src = pkgs.fetchFromGitHub quartoNvimKickstarterRepo;
       meta = {
         description = "Companion to https://github.com/quarto-dev/quarto-nvim";
         homepage = "https://github.com/jmbuhr/quarto-nvim-kickstarter";

@@ -6,18 +6,21 @@ pkgs.mkShell {
     # Utils
     git
     lazygit
+    make
+    unzip
 
     # Search
     ripgrep
     fd
     fzf
+    rg
 
-    # Formatter
-    prettier
-    stylua
-    black # for python format
-    codespell
-    isort
+    # # Formatter
+    # prettierd
+    # stylua
+    # black # for python format
+    # codespell
+    # isort
 
     # Dev
     deno
@@ -26,8 +29,8 @@ pkgs.mkShell {
 
     # Quarto-nvim-kickstarter dependency
     imagemagick
-    libmagickwand-dev
-    liblua-dev
+    # libmagickwand-dev
+    lua
     luajit
   ];
 }
