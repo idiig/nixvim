@@ -4,11 +4,12 @@
     settings = {
       indent = {
         smart_indent_cap = true;
-        char = " ";
+        char = "│";
       };
       scope = {
-        enabled = true;
-        char = "│";
+        show_start = false;
+        show_end = false;
+        show_exact_scope = true;
       };
     };
   };
