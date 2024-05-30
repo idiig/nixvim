@@ -6,13 +6,15 @@
     # TODO write dependency in a way like lazyvim
     ./dependencies/plenary.nix
     ./dependencies/copilot.nix
+    ./dependencies/denops.nix
 
     # UI
     ./ui/colorschemes.nix  # colorschemes
     ./ui/btw.nix  # clean banner
     ./ui/bufferline.nix  # show buffer on the top
     ./ui/lspkind.nix  # popup icons
-    ./ui/lightline.nix  # minibuffer
+    # ./ui/lightline.nix  # minibuffer
+    ./ui/lualine.nix
     # TODO
     # ./ui/lualine.lua
     # ./ui/gitsigns.lua
@@ -28,11 +30,11 @@
 
     # Auto completion
     ./completion/cmp.nix
-    ./completion/nvim-autopairs.nix
     ./completion/cmp-emoji.nix
     ./completion/copilot-cmp.nix
-    ./completion/snippets/friendly-snippets.nix
     ./completion/snippets/luasnip.nix
+    ./completion/snippets/friendly-snippets.nix
+    ./completion/nvim-autopairs.nix
 
     # Pickers
     ./pickers/telescope.nix
