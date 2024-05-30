@@ -1,6 +1,6 @@
 { pkgs, lib, ... }:
 {
-  config.opt = {
+  config.opts = {
 
     encoding = "utf-8";
     scriptencoding = "utf-8";
