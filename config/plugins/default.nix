@@ -13,7 +13,7 @@
     ./ui/btw.nix  # clean banner
     ./ui/bufferline.nix  # show buffer on the top
     ./ui/lspkind.nix  # popup icons
-    ./utils/indent-blankline.nix  # This plugin adds indentation guides to Neovim
+    ./ui/indent-blankline.nix  # This plugin adds indentation guides to Neovim
     ./ui/lualine.nix  # status line
     # ./ui/lightline.nix
     # TODO
@@ -57,8 +57,10 @@
 
     # CJK languages
     ./cjk/im-select.nix  # auto select input method when switch mode
-    # TODO
-    # ./cjk/kensaku.lua
+    # Japanese search
+    ./cjk/kensaku/dependency/kensaku.nix  # kensaku core
+    ./cjk/kensaku/kensaku-search.nix  # use / or ? with kensaku
+    ./cjk/kensaku/telescope-kensaku.nix  # use telescope with kensaku
 
     # Programming
     ./prog/conform.nix  # formatting
