@@ -13,18 +13,21 @@
     ./ui/btw.nix  # clean banner
     ./ui/bufferline.nix  # show buffer on the top
     ./ui/lspkind.nix  # popup icons
-    # ./ui/lightline.nix  # minibuffer
-    ./ui/lualine.nix
+    ./ui/lualine.nix  # status line
+    # ./ui/lightline.nix
     # TODO
     # ./ui/lualine.lua
     # ./ui/gitsigns.lua
     # ./ui/colorizer.lua
 
     # utils
-    ./utils/which-key.nix  # show keybindings
+    ./utils/which-key.nix  # show keybindings TODO: switch to hydra
+    # https://github.com/anuvyklack/hydra.nvim/wiki/Telescope
+    # https://nix-community.github.io/nixvim/plugins/hydra/hydras/index.html
     ./utils/undotree.nix  # undo history manage
     ./utils/copilotChat.nix  # AI assistant
     ./utils/nvim-surround.nix  # Edit surround of selection
+    ./utils/fuzzy-motion.nix  # jump to fuzzy match word
     # TODO
     # ./utils/auto-session.lua
 
