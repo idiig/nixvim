@@ -2,25 +2,27 @@
 
 pkgs.mkShell {
   buildInputs = with pkgs; [
+
+    # Utils
+    git
     lazygit
 
-    git
-
-    jsregexp
-
-    # neovim-ruby-host
-
+    # Search
     ripgrep
     fd
     fzf
 
+    # Formatter
     prettier
     stylua
     black # for python format
     codespell
     isort
 
+    # Dev
     deno
+    # neovim-ruby-host
+    # jsregexp
 
   ];
 }
