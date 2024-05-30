@@ -2,9 +2,10 @@
 {
   config.opts = {
 
+    updatetime = 100; # Faster completion
     encoding = "utf-8";
-    scriptencoding = "utf-8";
-    ambiwidth = "double";
+    # scriptencoding = "utf-8";
+    # ambiwidth = "double";
 
     relativenumber = true; # show relative line numbers
     number = true; # shows absolute line number on cursor line (when relative number is on)
