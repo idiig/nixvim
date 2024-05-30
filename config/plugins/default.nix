@@ -12,6 +12,7 @@
     ./ui/btw.nix  # clean banner
     ./ui/bufferline.nix  # show buffer on the top
     ./ui/lspkind.nix  # popup icons
+    ./ui/lightline.nix  # minibuffer
     # TODO
     # ./ui/lualine.lua
     # ./ui/gitsigns.lua
