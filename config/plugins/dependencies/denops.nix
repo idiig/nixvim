@@ -1,4 +1,6 @@
+# require deno
 # Required by plugins written in deno
+# e.g. kensaku.vim; skkeleton.vim
 {
   pkgs,
   lib,
@@ -14,7 +16,6 @@
 in {
 
   extraPlugins = with pkgs.vimUtils; [
-
     # denops
     (buildVimPlugin {
       pname = "denops.vim";

@@ -7,6 +7,47 @@
       # ",fg" = "live_grep";
     };
 
+    # Example default settings
+    settings.defaults = {
+      file_ignore_patterns = [
+        "^.git/"
+        "^.mypy_cache/"
+        "^__pycache__/"
+        "^output/"
+        "^data/"
+        "%.ipynb"
+      ];
+      path_display = "truncate";
+      layout_config = {
+        prompt_position = "top";
+      };
+      mappings = {
+        i = {
+          "<C-j>" = {
+            __raw = "require('telescope.actions').move_selection_next";
+          };
+          "<C-k>" = {
+            __raw = "require('telescope.actions').move_selection_previous";
+          };
+          "<C-n>" = {
+            __raw = "require('telescope.actions').move_selection_next";
+          };
+          "<C-p>" = {
+            __raw = "require('telescope.actions').move_selection_previous";
+          };
+          # FIXME
+          "<C-q>" = {
+            __raw = "require('telescope.actions').send_selected_to_qflist + require('telescope.actions').open_qflist";
+          };
+        };
+      };
+      selection_caret = "> ";
+      set_env = {
+        COLORTERM = "truecolor";
+      };
+      sorting_strategy = "ascending";
+    };
+
     # For extensions, look https://github.com/nix-community/nixvim/tree/main/plugins/telescope/extensions
     extensions = {
 
@@ -78,6 +119,11 @@
             hijack_netrw = true;
           };
         };
+      };
+
+      # Frequency
+      frecency = {
+        enable = false;
       };
     };
   };

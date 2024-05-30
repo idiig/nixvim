@@ -35,7 +35,9 @@ in {
       mode = "n";
       key = "S";
       action = "<cmd>FuzzyMotion<CR>";
-      remap = true;
+      options = {
+        noremap = true;
+      };
     }
   ];
 

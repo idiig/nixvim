@@ -9,7 +9,7 @@
         desc = "Search in current buffer (:Telescope current_buffer_fuzzy_find)";
       };
     }
-    # TODO: Search current string in current buffer
+    # FIXME: Search current string in current buffer
     # {
     #   mode = "v";
     #   key = "<leader>s";

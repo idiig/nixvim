@@ -4,7 +4,7 @@
   ...
 }: let
 
-  kensakuRepo = {
+  telescopeKensakuRepo = {
     owner = "Allianaab2m";
     repo = "telescope-kensaku.nvim";
     rev = "4605ba9149fa276e55f08b77acc7473233b7a063";
