@@ -17,7 +17,9 @@
         "^data/"
         "%.ipynb"
       ];
-      path_display = "truncate";
+      path_display = {
+        truncate = 3;
+      };
       layout_config = {
         prompt_position = "top";
       };
