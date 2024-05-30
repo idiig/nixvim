@@ -16,6 +16,7 @@
     ./ui/indent-blankline.nix  # This plugin adds indentation guides to Neovim
     ./ui/lualine.nix  # status line
     ./ui/rainbow-delimiters.nix  # delimiters
+    ./ui/image.nix  # render images
     # ./ui/lightline.nix
     # TODO
     # ./ui/gitsigns.lua
@@ -66,13 +67,16 @@
     # Develop
     ./prog/conform.nix  # formatting
     # LSP
+    ./prog/lsp/lsp.nix
+    # TODO: none-ls -> null-ls
     ./prog/lsp/none-ls.nix  # diagnostics, code actions, and more
     ./prog/treesitter/nvim-treesitter.nix  # scope for highlight
-    # linting
-    # highlight
+    # TODO Fidget: Extensible UI for Neovim notifications and LSP progress messages.
+    # TODO linting
 
     # Writting
     ./writer/quarto-nvim.nix
+    # TODO
     # markdown
     # tex
     # typst

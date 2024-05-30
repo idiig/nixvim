@@ -24,5 +24,10 @@ pkgs.mkShell {
     # neovim-ruby-host
     # jsregexp
 
+    # Quarto-nvim-kickstarter dependency
+    imagemagick
+    libmagickwand-dev
+    liblua-dev
+    luajit
   ];
 }

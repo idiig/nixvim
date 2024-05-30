@@ -13,7 +13,7 @@
         yamlls = { enable = true; };  # yaml
         bashls = {enable = true;};  # shell
         cmake = {enable = true;};  # cmake
-        cssl = {enable = true;};  # css
+        # cssl = {enable = true;};  # css
         htmx = {enable = true;};  # htmx
         jsonls = {enable = true;};  # json
         dockerls = {enable = true;};  # docker
