@@ -33,6 +33,9 @@
           nvim = nixvim'.makeNixvimWithModule nixvimModule;
         in
         {
+
+          formatter = pkgs.legacyPackages.${system}.nixpkgs-fmt;
+
           checks = {
             # Run `nix flake check .` to verify that your config is not broken
             default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
@@ -42,6 +45,10 @@
             # Lets you run `nix run .` to start nixvim
             default = nvim;
           };
+
+          # dependencies
+          devShells.default = import ./shell.nix { inherit pkgs; };
+
         };
     };
 }
