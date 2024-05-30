@@ -8,12 +8,8 @@
       };
       scope = {
         enabled = true;
-        char = "?";
+        char = "│";
       };
     };
   };
-
-  extraConfigLua = ''
-    require("ibl").setup()
-  '';
 }
