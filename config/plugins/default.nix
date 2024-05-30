@@ -15,9 +15,9 @@
     ./ui/lspkind.nix  # popup icons
     ./ui/indent-blankline.nix  # This plugin adds indentation guides to Neovim
     ./ui/lualine.nix  # status line
+    ./ui/rainbow-delimiters.nix  # delimiters
     # ./ui/lightline.nix
     # TODO
-    # ./ui/lualine.lua
     # ./ui/gitsigns.lua
     # ./ui/colorizer.lua
 
@@ -31,6 +31,7 @@
     ./utils/fuzzy-motion.nix  # jump to fuzzy match word
     # TODO
     # ./utils/auto-session.lua
+    # git
 
     # Auto completion
     ./completion/cmp.nix
@@ -62,9 +63,20 @@
     ./cjk/kensaku/kensaku-search.nix  # use / or ? with kensaku
     ./cjk/kensaku/telescope-kensaku.nix  # use telescope with kensaku
 
-    # Programming
+    # Develop
     ./prog/conform.nix  # formatting
+    # LSP
+    ./prog/lsp/none-ls.nix  # diagnostics, code actions, and more
+    ./prog/treesitter/nvim-treesitter.nix  # scope for highlight
+    # linting
+    # highlight
 
     # Writting
+    ./writer/quarto-nvim.nix
+    # markdown
+    # tex
+    # typst
+    # quarto
+    # txt
   ];
 }

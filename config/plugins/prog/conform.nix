@@ -19,19 +19,18 @@
       # have other formatters configured.
       "_" = [ "trim_whitespace" ];
 
-      javascript = [ "prettier" ];
-      typescript = [ "prettier" ];
-      javascriptreact = [ "prettier" ];
-      typescriptreact = [ "prettier" ];
-      svelte = [ "prettier" ];
-      css = [ "prettier" ];
-      php = [ "prettier" ];
-      html = [ "prettier" ];
-      json = [ "prettier" ];
-      yaml = [ "prettier" ];
-      markdown = [ "prettier" ];
-      graphql = [ "prettier" ];
-      lua = [ "stylua" ];
+      # web
+      javascript = [["prettierd" "prettier"]];
+      javascriptreact = [["prettierd" "prettier"]];
+      typescript = [["prettierd" "prettier"]];
+      typescriptreact = [["prettierd" "prettier"]];
+      html = [["prettierd" "prettier"]];
+      css = [["prettierd" "prettier"]];
+
+      lua = ["stylua"];
+      nix = ["alejandra"];
+      markdown = [["prettierd" "prettier"]];
+      yaml = ["yamllint" "yamlfmt"];
       python = [ "isort" "black" ];
     };
 
