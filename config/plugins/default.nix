@@ -28,6 +28,7 @@
     ./utils/copilotChat.nix  # AI assistant
     ./utils/nvim-surround.nix  # Edit surround of selection
     ./utils/fuzzy-motion.nix  # jump to fuzzy match word
+    ./utils/indent-blankline.nix  # This plugin adds indentation guides to Neovim
     # TODO
     # ./utils/auto-session.lua
 
