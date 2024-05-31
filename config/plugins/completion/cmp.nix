@@ -14,27 +14,81 @@
         snippet = {expand = "luasnip";};
         formatting = {fields = ["kind" "abbr" "menu"];};
         sources = [
-          {name = "nvim_lsp";}
-          {name = "emoji";}
+          # We have `autoEnableSources = true;` in NixVim !!
+          # This will cans the sources array and install the plugins if they are known to nixvim.
+          # See example: https://github.com/elythh/nixvim/blob/main/config/plug/completion/cmp.nix
+          # Full list see: https://github.com/nix-community/nixvim/blob/main/plugins/completion/cmp/sources.nix
+          {
+            name = "nvim_lsp";
+            group_index = 1;  # This is to set priority
+            #  hide all entries with kind `Text` from the `nvim_lsp` filter
+            entry_filter = ''
+            function(entry, ctx)
+              return require('cmp.types').lsp.CompletionItemKind[entry:get_kind()] ~= 'Text'
+            end
+            '';
+          }
           {
             name = "buffer"; # text within current buffer
             option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
             keywordLength = 3;
+            group_index = 2;  # This is to set priority
           }
-          {name = "copilot";}
+          {
+            name = "fuzzy-buffer";
+            option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
+            keywordLength = 3;
+            group_index = 3;  # This is to set priority
+          }
           {
             name = "path"; # file system paths
+            keywordLength = 3;
+            group_index = 2;  # This is to set priority
+          }
+          {
+            name = "fuzzy-path"; # file system paths
             keywordLength = 3;
           }
           {
             name = "luasnip"; # snippets
             keywordLength = 3;
+            group_index = 1;  # This is to set priority
           }
+          {
+            name = "copilot";
+            keywordLength = 3;
+            group_index = 2;  # This is to set priority
+          }
+          {
+            name = "latex-symbols";
+            keywordLength = 3;
+            group_index = 2;  # This is to set priority
+          }
+          # {
+          #   name = "cmdline";
+          #   keywordLength = 3;
+          # }
+          {
+            name = "dictionary";
+            keywordLength = 3;
+            group_index = 2;  # This is to set priority
+          }
+          {
+            name = "treesitter";
+            keywordLength = 3;
+            group_index = 1;  # This is to set priority
+          }
+          # {
+          #   name = "spell";
+          #   keywordLength = 3;
+          # }
+          # {
+          #   name = "emoji";
+          # }
           # {
           #   name = "skkeleton"; # Japanese input
           #   keyword_length = 2;
           # }
-
         ];
 
         window = {
@@ -52,17 +106,13 @@
           "<C-b>" = "cmp.mapping.scroll_docs(-4)";
           "<C-f>" = "cmp.mapping.scroll_docs(4)";
           "<C-Space>" = "cmp.mapping.complete()";
+          # confirm integration
           "<CR>" = "cmp.mapping.confirm({ select = true })";
           "<S-CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
         };
       };
     };
 
-    cmp-nvim-lsp = {enable = true;}; # lsp
-    cmp-fuzzy-buffer = {enable = true;};
-    cmp-fuzzy-path = {enable = true;}; # file system paths
-    cmp_luasnip = {enable = true;}; # snippets
-    cmp-cmdline = {enable = false;}; # autocomplete for cmdline
   };
   extraConfigLua = ''
     luasnip = require("luasnip")

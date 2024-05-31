@@ -5,8 +5,8 @@
 
     # TODO write dependency in a way like lazyvim
     ./dependencies/plenary.nix
-    ./dependencies/copilot.nix
     ./dependencies/denops.nix
+    ./dependencies/copilot.nix
 
     # UI
     ./ui/colorschemes.nix  # colorschemes
@@ -36,8 +36,6 @@
 
     # Auto completion
     ./completion/cmp.nix
-    ./completion/cmp-emoji.nix
-    ./completion/copilot-cmp.nix
     ./completion/snippets/luasnip.nix
     ./completion/snippets/friendly-snippets.nix
     ./completion/nvim-autopairs.nix
@@ -63,6 +61,7 @@
     ./cjk/kensaku/dependency/kensaku.nix  # kensaku core
     ./cjk/kensaku/kensaku-search.nix  # use / or ? with kensaku
     ./cjk/kensaku/telescope-kensaku.nix  # use telescope with kensaku
+    # TODO Skkeleton
 
     # Develop
     ./prog/conform.nix  # formatting
