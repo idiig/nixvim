@@ -2,6 +2,16 @@
   plugins.wilder = {
     enable = true;
     modes = [ ":" "/" "?" ];
+    renderer =  ''
+    wilder.wildmenu_renderer({
+      -- highlighter applies highlighting to the candidates
+      highlighter = wilder.basic_highlighter(),
+      separator = ' · ',
+      left = {' ', wilder.wildmenu_spinner(), ' '},
+      right = {' ', wilder.wildmenu_index()},
+    })
+    '';
+    usePythonRemotePlugin = true;
     pipeline =   [
       ''
       wilder.branch(
