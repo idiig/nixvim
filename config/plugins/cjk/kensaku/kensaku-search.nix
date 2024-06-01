@@ -27,7 +27,6 @@ in {
   ];
 
   keymaps = [
-    # keymap.set("c", "<CR>", "<Plug>(kensaku-search-replace)<CR>", { noremap = true })
     {
       mode = "c";
       key = "<cr>";

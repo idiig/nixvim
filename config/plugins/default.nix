@@ -29,7 +29,7 @@
     ./utils/undotree.nix  # undo history manage
     ./utils/copilotChat.nix  # AI assistant
     ./utils/nvim-surround.nix  # Edit surround of selection
-    ./utils/fuzzy-motion.nix  # jump to fuzzy match word
+    ./utils/fuzzy-motion.nix  # Emacs Ace jump
     ./utils/wilder.nix  # wilder buffer
     # TODO
     # ./utils/auto-session.lua
