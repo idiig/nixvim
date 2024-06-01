@@ -2,7 +2,7 @@
   plugins.lspkind = {
     enable = true;
     symbolMap = {
-      # Copilot = "?";
+      Copilot = "";
     };
     extraOptions = {
       maxwidth = 50;

@@ -76,7 +76,6 @@
 
     # Writting
     ./writer/quarto-nvim.nix
-    ./writer/quarto-nvim-kickstarter.nix  #
     # TODO
     # markdown
     # tex
