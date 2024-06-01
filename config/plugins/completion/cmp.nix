@@ -67,7 +67,7 @@
           {
             name = "luasnip"; # snippets
             keywordLength = 3;
-            group_index = 1;  # This is to set priority
+            group_index = 2;  # This is to set priority
           }
           {
             name = "copilot";
@@ -92,13 +92,8 @@
           # filetype specific sources
           {
             name = "git";
-            keywordLength = 2;
+            keywordLength = 3;
             option.filetype.__raw = "gitcommit";
-          }
-          {
-            name = "zsh";
-            keywordlength = 2;
-            option.filetype.__raw = "terminal";
           }
           # {
           #   name = "cmdline";

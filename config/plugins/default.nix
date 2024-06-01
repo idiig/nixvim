@@ -40,6 +40,7 @@
     ./completion/snippets/luasnip.nix
     ./completion/snippets/friendly-snippets.nix
     ./completion/nvim-autopairs.nix
+    ./completion/extra-sources/cmp-skkeleton.nix
 
     # Pickers
     ./pickers/telescope.nix
@@ -61,8 +62,9 @@
     # Japanese search
     ./cjk/kensaku/dependency/kensaku.nix  # kensaku core
     ./cjk/kensaku/kensaku-search.nix  # use / or ? with kensaku
-    ./cjk/kensaku/telescope-kensaku.nix  # use telescope with kensaku
-    # TODO Skkeleton
+    ./cjk/skkeleton.nix  # skk in vim
+    # FIXME: telescope-kensaku
+    # ./cjk/kensaku/telescope-kensaku.nix  # use telescope with kensaku
 
     # Develop
     ./prog/conform.nix  # formatting

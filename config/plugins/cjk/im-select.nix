@@ -14,7 +14,6 @@ in {
 
   extraPlugins = with pkgs.vimUtils; [
 
-    # coplilot
     (buildVimPlugin {
       pname = "im-select";
       version = "2024-05-29";
