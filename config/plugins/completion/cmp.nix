@@ -19,8 +19,8 @@
         experimental = { ghost_text = true; };
         performance = {
           debounce = 60;
-          fetchingTimeout = 200;
-          maxViewEntries = 6;
+          fetching_timeout = 200;
+          max_view_entries = 6;
         };
 
         # Snippet
@@ -34,7 +34,7 @@
           # Full list see: https://github.com/nix-community/nixvim/blob/main/plugins/completion/cmp/sources.nix
           {
             name = "nvim_lsp";
-            keywordLength = 3;
+            keyword_length = 3;
             group_index = 1;  # This is to set priority
             #  hide all entries with kind `Text` from the `nvim_lsp` filter
             entry_filter = ''
@@ -46,53 +46,53 @@
           {
             name = "buffer"; # text within current buffer
             option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
-            keywordLength = 3;
+            keyword_length = 3;
             group_index = 2;  # This is to set priority
           }
           {
             name = "fuzzy-buffer";
             option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
-            keywordLength = 3;
+            keyword_length = 3;
             group_index = 3;  # This is to set priority
           }
           {
             name = "path"; # file system paths
-            keywordLength = 3;
+            keyword_length = 3;
             group_index = 2;  # This is to set priority
           }
           {
             name = "fuzzy-path"; # file system paths
-            keywordLength = 3;
+            keyword_length = 3;
           }
           {
             name = "luasnip"; # snippets
-            keywordLength = 3;
+            keyword_length = 3;
             group_index = 2;  # This is to set priority
           }
           {
             name = "copilot";
-            keywordLength = 3;
+            keyword_length = 3;
             group_index = 2;  # This is to set priority
           }
           {
             name = "treesitter";
-            keywordLength = 3;
+            keyword_length = 3;
             group_index = 1;  # This is to set priority
           }
           {
             name = "dictionary";
-            keywordLength = 3;
+            keyword_length = 3;
             group_index = 2;  # This is to set priority
           }
           {
             name = "spell";
-            keywordLength = 3;
+            keyword_length = 3;
             option.filetype.__raw = "vim.api.nvim_list_bufs";
           }
           # filetype specific sources
           {
             name = "git";
-            keywordLength = 3;
+            keyword_length = 3;
             option.filetype.__raw = "gitcommit";
           }
           # {
@@ -103,7 +103,7 @@
           # }
           # {
           #   name = "latex-symbols";
-          #   keywordLength = 1;
+          #   keyword_length = 1;
           #   group_index = 2;  # This is to set priority
           #   # FIXME:
           #   trigger_characters =  [ "$" ];
@@ -111,10 +111,11 @@
           # {
           #   name = "emoji";
           # }
-          # {
-          #   name = "skkeleton"; # Japanese input
-          #   keyword_length = 2;
-          # }
+          # Extra sources
+          {
+            name = "skkeleton"; # Japanese input
+            keyword_length = 3;
+          }
 
         ];
 

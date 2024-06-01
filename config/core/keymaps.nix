@@ -11,7 +11,7 @@
     }
     {
       mode = "n";
-      key = "<leader>nh";
+      key = "<C-l>";
       action = ":nohl<CR>";
       options = { desc = "Clear search highlights"; };
     }

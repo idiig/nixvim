@@ -27,12 +27,4 @@ in {
       };
     })
   ];
-
-  extraConfigLua = ''
-    require("cmp").setup({
-      sources = {
-        { name = "skkeleton" },
-      }
-    })
-  '';
 }

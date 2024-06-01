@@ -36,11 +36,11 @@
     # git
 
     # Auto completion
-    ./completion/cmp.nix
-    ./completion/snippets/luasnip.nix
     ./completion/snippets/friendly-snippets.nix
-    ./completion/nvim-autopairs.nix
+    ./completion/snippets/luasnip.nix
     ./completion/extra-sources/cmp-skkeleton.nix
+    ./completion/cmp.nix
+    ./completion/nvim-autopairs.nix
 
     # Pickers
     ./pickers/telescope.nix
