@@ -30,7 +30,7 @@
     ./utils/nvim-surround.nix # Edit surround of selection
     ./utils/fuzzy-motion.nix # Emacs Ace jump
     ./utils/wilder.nix # wilder buffer
-    ./utils/neogit.nix # git
+    ./utils/neogit.nix # git TODO: keybindings
     # TODO
     # ./utils/auto-session.lua
 
@@ -43,6 +43,7 @@
 
     # Pickers
     ./pickers/telescope.nix
+    # TODO: These should be managed by hydra
     ./pickers/keymaps/file-picker.nix
     ./pickers/keymaps/buffer-picker.nix
     ./pickers/keymaps/meta-picker.nix
@@ -54,7 +55,9 @@
     # ./pickers/keymaps/lsp-picker.nix
 
     # Filesystem
+    # TODO
     # ./filesystem/dired.nix
+    # ./filesystem/oil.nix
 
     # CJK languages
     ./cjk/im-select.nix # auto select input method when switch mode
@@ -64,6 +67,7 @@
     ./cjk/skkeleton.nix # skk in vim
     # FIXME: telescope-kensaku
     # ./cjk/kensaku/telescope-kensaku.nix  # use telescope with kensaku
+    # TODO: Chinese config
 
     # Develop
     ./prog/conform.nix # formatting
@@ -74,11 +78,13 @@
     ./prog/treesitter/nvim-treesitter.nix # scope for highlight
     # TODO otter
     ./prog/otter.nix # otter
+    ./prog/vim-slime.nix
     # TODO Fidget: Extensible UI for Neovim notifications and LSP progress messages.
     # TODO linting
 
     # Writting
     ./writer/quarto-nvim.nix
+    # ./writer/slime.nix
     # TODO: Outter (Use code env when integrating in other env, e.g. markdown)
     # TODO: single q to quit telescope
     # # FIXME: :q may freeze
@@ -89,4 +95,13 @@
     # quarto
     # txt
   ];
+
+  # # TODO: Add per-filetype configuration
+  # files."ftdetect/myft.lua".autoCmd = [
+  #   {
+  #     event = ["BufRead" "BufNewFile"];
+  #     pattern = ["*.myft"];
+  #     command = "set ft=myft";
+  #   }
+  # ];
 }

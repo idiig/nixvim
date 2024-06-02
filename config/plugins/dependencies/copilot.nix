@@ -1,22 +1,19 @@
 # This plugin is required by copilotChat and cmp
 # To use github copilot type `:Copilot auth` to access github copilot account
+# TODO: Slow down the copilot suggestion
 {
   plugins.copilot-lua = {
     enable = true;
-    suggestion = { enabled = false; };
-    panel = { enabled = false; };
+    suggestion = {enabled = false;};
+    panel = {enabled = false;};
   };
 }
-
-
 # an old version to build from github
-
 # {
 #   pkgs,
 #   lib,
 #   ...
 # }: let
-
 #   copilotRepo = {
 #     owner = "zbirenbaum";
 #     repo = "copilot.lua";
@@ -25,11 +22,8 @@
 #     # rev = "03f825956ec49e550d07875d867ea6e7c4dc8c00";
 #     # hash = "sha256-H8dwtkk5ADagpIXfZ2rL8Giy77cC6daWoSgntO9eh0c=";
 #   };
-
 # in {
-
 #   extraPlugins = with pkgs.vimUtils; [
-
 #     # coplilot
 #     (buildVimPlugin {
 #       pname = "copilot";
@@ -42,7 +36,6 @@
 #       };
 #     })
 #   ];
-
 #   extraConfigLua = ''
 #     require("copilot").setup({
 #       suggestion = { enabled = false },
@@ -50,3 +43,4 @@
 #     })
 #   '';
 # }
+
