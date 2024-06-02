@@ -21,7 +21,8 @@
     # ./ui/colorizer.lua
 
     # utils
-    ./utils/which-key.nix # show keybindings TODO: switch to hydra
+    ./utils/which-key.nix # show keybindings
+    # TODO: switch to hydra
     # https://github.com/anuvyklack/hydra.nvim/wiki/Telescope
     # https://nix-community.github.io/nixvim/plugins/hydra/hydras/index.html
     ./utils/undotree.nix # undo history manage
@@ -29,9 +30,9 @@
     ./utils/nvim-surround.nix # Edit surround of selection
     ./utils/fuzzy-motion.nix # Emacs Ace jump
     ./utils/wilder.nix # wilder buffer
+    ./utils/neogit.nix # git
     # TODO
     # ./utils/auto-session.lua
-    # git
 
     # Auto completion
     ./completion/snippets/friendly-snippets.nix
@@ -71,6 +72,8 @@
     # TODO: none-ls -> null-ls
     ./prog/lsp/none-ls.nix # diagnostics, code actions, and more
     ./prog/treesitter/nvim-treesitter.nix # scope for highlight
+    # TODO otter
+    ./prog/otter.nix # otter
     # TODO Fidget: Extensible UI for Neovim notifications and LSP progress messages.
     # TODO linting
 
