@@ -9,7 +9,7 @@
     # UI
     ./ui/colorschemes.nix # colorschemes
     ./ui/btw.nix # clean banner
-    # ./ui/bufferline.nix  # show buffer on the top
+    ./ui/bufferline.nix # show buffer on the top
     ./ui/lspkind.nix # popup icons
     ./ui/indent-blankline.nix # This plugin adds indentation guides to Neovim
     ./ui/lualine.nix # status line

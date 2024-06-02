@@ -2,25 +2,17 @@
 # https://github.com/elythh/nixvim/blob/main/config/plug/completion/cmp.nix
 # https://github.com/MikaelFangel/nixvim-config/blob/main/config/cmp.nix
 # Sources list see: https://github.com/nix-community/nixvim/blob/main/plugins/completion/cmp/sources.nix
-
-{ lib, ... }:
-
-let
+{lib, ...}: let
   ui = import ../ui/misc.nix;
-in
-
-{
+in {
   plugins = {
-
     cmp = {
-
       enable = true;
 
       settings = {
-
         # Gloabal settings
         autoEnableSources = true;
-        experimental = { ghost_text = true; };
+        experimental = {ghost_text = true;};
         performance = {
           debounce = 60;
           fetching_timeout = 200;
@@ -28,7 +20,7 @@ in
         };
 
         # Snippet
-        snippet = { expand = "luasnip"; };
+        snippet = {expand = "luasnip";};
 
         # Source
         sources = [
@@ -39,50 +31,50 @@ in
           {
             name = "nvim_lsp";
             keyword_length = 2;
-            group_index = 1;  # This is to set priority
+            group_index = 1; # This is to set priority
             #  hide all entries with kind `Text` from the `nvim_lsp` filter
             entry_filter = ''
-            function(entry, ctx)
-              return require('cmp.types').lsp.CompletionItemKind[entry:get_kind()] ~= 'Text'
-            end
+              function(entry, ctx)
+                return require('cmp.types').lsp.CompletionItemKind[entry:get_kind()] ~= 'Text'
+              end
             '';
           }
           {
             name = "buffer"; # text within current buffer
             option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
             keyword_length = 3;
-            group_index = 2;  # This is to set priority
+            group_index = 2; # This is to set priority
           }
           {
             name = "fuzzy-buffer";
             option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
             keyword_length = 3;
-            group_index = 3;  # This is to set priority
+            group_index = 3; # This is to set priority
           }
           {
             name = "path"; # file system paths
             keyword_length = 3;
-            group_index = 2;  # This is to set priority
+            group_index = 2; # This is to set priority
           }
           {
             name = "fuzzy-path"; # file system paths
             keyword_length = 3;
-            group_index = 3;  # This is to set priority
+            group_index = 3; # This is to set priority
           }
           {
             name = "luasnip"; # snippets
             keyword_length = 2;
-            group_index = 2;  # This is to set priority
+            group_index = 2; # This is to set priority
           }
           {
             name = "treesitter";
             keyword_length = 3;
-            group_index = 1;  # This is to set priority
+            group_index = 1; # This is to set priority
           }
           {
             name = "dictionary";
             keyword_length = 3;
-            group_index = 2;  # This is to set priority
+            group_index = 2; # This is to set priority
           }
           {
             name = "spell";
@@ -92,13 +84,17 @@ in
           {
             name = "copilot";
             keyword_length = 1;
-            group_index = 10;  # This is to set priority
+            group_index = 10; # This is to set priority
           }
           # filetype specific sources
           {
             name = "git";
-            keyword_length = 3;
+            keyword_length = 2;
             option.filetype.__raw = "gitcommit";
+          }
+          {
+            name = "otter";
+            keyword_length = 2;
           }
           # {
           #   name = "cmdline";
@@ -121,12 +117,11 @@ in
             name = "skkeleton"; # Japanese input
             keyword_length = 3;
           }
-
         ];
 
         # UI config
         formatting = {
-          fields = [ "abbr" "kind" "menu" ];
+          fields = ["abbr" "kind" "menu"];
           # format =
           #   # Example here: https://github.com/MikaelFangel/nixvim-config/blob/main/config/cmp.nix
           #   # BTW, I use lspkind
@@ -138,8 +133,7 @@ in
 
         window = {
           completion = {
-            winhighlight =
-              "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
+            winhighlight = "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
             scrollbar = false;
             sidePadding = 0;
             border = ui.border_hard;
@@ -149,8 +143,7 @@ in
           documentation = {
             border = ui.border_hard;
             # border = ui.border_soft;  # i.e., border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
-            winhighlight =
-              "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
+            winhighlight = "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
           };
         };
 
