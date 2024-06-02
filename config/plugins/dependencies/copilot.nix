@@ -1,10 +1,10 @@
 # This plugin is required by copilotChat and cmp
-# To use github copilot type `:Copilot authn` to access github copilot account
+# To use github copilot type `:Copilot auth` to access github copilot account
 {
   plugins.copilot-lua = {
     enable = true;
-    suggestion = {enabled = false;};
-    panel = {enabled = false;};
+    suggestion = { enabled = false; };
+    panel = { enabled = false; };
   };
 }
 

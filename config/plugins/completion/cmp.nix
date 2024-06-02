@@ -24,7 +24,7 @@ in
         performance = {
           debounce = 60;
           fetching_timeout = 200;
-          max_view_entries = 6;
+          max_view_entries = 10;
         };
 
         # Snippet
@@ -38,7 +38,7 @@ in
           # Full list see: https://github.com/nix-community/nixvim/blob/main/plugins/completion/cmp/sources.nix
           {
             name = "nvim_lsp";
-            keyword_length = 3;
+            keyword_length = 2;
             group_index = 1;  # This is to set priority
             #  hide all entries with kind `Text` from the `nvim_lsp` filter
             entry_filter = ''
@@ -67,15 +67,11 @@ in
           {
             name = "fuzzy-path"; # file system paths
             keyword_length = 3;
+            group_index = 3;  # This is to set priority
           }
           {
             name = "luasnip"; # snippets
-            keyword_length = 3;
-            group_index = 2;  # This is to set priority
-          }
-          {
-            name = "copilot";
-            keyword_length = 3;
+            keyword_length = 2;
             group_index = 2;  # This is to set priority
           }
           {
@@ -92,6 +88,11 @@ in
             name = "spell";
             keyword_length = 3;
             option.filetype.__raw = "vim.api.nvim_list_bufs";
+          }
+          {
+            name = "copilot";
+            keyword_length = 1;
+            group_index = 10;  # This is to set priority
           }
           # filetype specific sources
           {
