@@ -57,7 +57,7 @@
     # Filesystem
     # TODO
     # ./filesystem/dired.nix
-    # ./filesystem/oil.nix
+    ./filesystem/oil.nix
 
     # CJK languages
     ./cjk/im-select.nix # auto select input method when switch mode
