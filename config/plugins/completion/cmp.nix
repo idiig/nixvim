@@ -5,6 +5,10 @@
 
 { lib, ... }:
 
+let
+  ui = import ../ui/misc.nix;
+in
+
 {
   plugins = {
 
@@ -137,10 +141,13 @@
               "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
             scrollbar = false;
             sidePadding = 0;
-            border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
+            border = ui.border_hard;
+            # border = ui.border_soft;
+            # border = ui.border_soft;  # i.e., border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
           };
           documentation = {
-            border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│"  ];
+            border = ui.border_hard;
+            # border = ui.border_soft;  # i.e., border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
             winhighlight =
               "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
           };
