@@ -13,7 +13,7 @@
     ./ui/lspkind.nix # popup icons
     ./ui/indent-blankline.nix # This plugin adds indentation guides to Neovim
     ./ui/lualine.nix # status line
-    ./ui/neoscoll.nix # scrolloff related settings
+    ./ui/neoscroll.nix # scrolloff related settings
     ./ui/rainbow-delimiters.nix # delimiters
     ./ui/image.nix # render images
     # ./ui/lightline.nix
