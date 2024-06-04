@@ -13,6 +13,7 @@
     ./ui/lspkind.nix # popup icons
     ./ui/indent-blankline.nix # This plugin adds indentation guides to Neovim
     ./ui/lualine.nix # status line
+    ./ui/neoscoll.nix # scrolloff related settings
     ./ui/rainbow-delimiters.nix # delimiters
     ./ui/image.nix # render images
     # ./ui/lightline.nix
@@ -58,7 +59,7 @@
     # TODO
     # ./filesystem/dired.nix
     ./filesystem/oil.nix # # TODO: These could be replaced by mini.nvim
-    # ./filesystem/harpoo.nix  # consider use harpoon
+    # ./filesystem/harpoon.nix  # consider use harpoon
 
     # CJK languages
     ./cjk/im-select.nix # auto select input method when switch mode

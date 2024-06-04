@@ -1,7 +1,9 @@
-{ pkgs, lib, ... }:
 {
+  pkgs,
+  lib,
+  ...
+}: {
   config.opts = {
-
     updatetime = 100; # Faster completion
     encoding = "utf-8";
     # scriptencoding = "utf-8";
@@ -15,7 +17,7 @@
     shiftwidth = 2; # 2 spaces for indent width
     expandtab = true; # expand tab to spaces
     autoindent = true; # copy indent from current line when starting new one
-    wrap = false; # unenable line wrapping
+    wrap = true; # enable line wrapping
     ignorecase = true; # ignore case when searching
     smartcase = true; # if you include mixed case in your search, assumes you want case-sensitive
     cursorline = true; # highlight the current cursor line
