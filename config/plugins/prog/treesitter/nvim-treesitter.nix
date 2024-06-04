@@ -8,20 +8,16 @@
       folding = false; # treesitter based folding
       indent = true; # treesitter based folding
       nixvimInjections = true; #  enable nixvim specific injections, like lua highlighting in extraConfigLua.
-      # TODO: translate
-      # incremental_selection = {
-      #   enable = true,
-      #   keymaps = {
-      #     init_selection = 'gnn',
-      #     node_incremental = 'grn',
-      #     scope_incremental = 'grc',
-      #     node_decremental = 'grm',
-      #   },
-      # },
-    };
-    treesitter-context = {
-      enable = true;
-      settings = {max_lines = 2;};
+      incrementalSelection = {
+        enable = true;
+        # defaul keymaps
+        keymaps = {
+          initSelection = "gnn";
+          nodeIncremental = "grn";
+          scopeIncremental = "grc";
+          nodeDecremental = "grm";
+        };
+      };
     };
   };
 }

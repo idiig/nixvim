@@ -57,7 +57,8 @@
     # Filesystem
     # TODO
     # ./filesystem/dired.nix
-    ./filesystem/oil.nix
+    ./filesystem/oil.nix # # TODO: These could be replaced by mini.nvim
+    # ./filesystem/harpoo.nix  # consider use harpoon
 
     # CJK languages
     ./cjk/im-select.nix # auto select input method when switch mode
@@ -76,9 +77,10 @@
     # TODO: none-ls -> null-ls
     ./prog/lsp/none-ls.nix # diagnostics, code actions, and more
     ./prog/treesitter/nvim-treesitter.nix # scope for highlight
+    ./prog/treesitter/nvim-treesitter-context.nix # scope for highlight
     # TODO otter
-    ./prog/otter.nix # otter
-    ./prog/vim-slime.nix
+    ./prog/literate/otter.nix # otter
+    ./prog/literate/vim-slime.nix
     # TODO Fidget: Extensible UI for Neovim notifications and LSP progress messages.
     # TODO linting
 
@@ -97,6 +99,7 @@
   ];
 
   # # TODO: Add per-filetype configuration
+  # https://github.com/nix-community/nixvim/pull/246
   # files."ftdetect/myft.lua".autoCmd = [
   #   {
   #     event = ["BufRead" "BufNewFile"];

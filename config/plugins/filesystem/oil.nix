@@ -15,7 +15,7 @@
         };
       };
       preview = {
-        border = "rounded";
+        border = "single";
       };
       keymaps = {
         "g?" = "actions.show_help";

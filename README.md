@@ -15,3 +15,13 @@ To test your configuration simply run the following command
 ```
 nix run .
 ```
+
+### TODO
+
+- In literate-programming environments, such as `.ipynb`, `.qmd`, `.rmd`, enable keymap regarding terminals.
+  - otter completion
+  - language specific terminals
+  - zotero telescope add zotero extension
+- telescope add zotero extension
+- line wrap config
+- Keep line at center even if at the last line
